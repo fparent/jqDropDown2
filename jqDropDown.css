@@ -1,0 +1,114 @@
+/*********************************************************************
+
+jQuery UI DropDown v1.0
+http://uraniuminteractive.com
+
+Copyright 2011, Frank Parent for Uranium Interactive
+Free to use and abuse under the MIT license.
+http://www.opensource.org/licenses/mit-license.php
+
+**********************************************************************/
+.list-container {
+	font-size: 13px;
+	font-family: sans-serif; 
+	margin-bottom: 1em;
+	position: relative;
+}
+
+.toggle-container {
+	display: inline-block;
+	border: solid 1px #abadb3;
+	position: relative;
+}
+
+.toggle {
+	color: #000;
+	line-height: 18px;
+	text-decoration: none;
+	padding-left: 4px;
+	outline: none;
+	cursor: default;
+}
+
+.trigger-single, .trigger-multiple {
+	height: 18px;
+	display: block;
+	background: #fff url(skins/default.png) no-repeat right top;
+}
+
+.trigger-multiple {
+	background: none;
+	list-style-type: none;
+	cursor: text;
+	margin: 0;
+}
+
+.list-window {
+	overflow-y: auto;
+	background-color: #fff;
+	border: solid 1px #abadb3;
+}
+
+.dropdown-window {
+	display: none;
+	overflow: hidden;
+	background-color: #fff;
+	border: solid 1px #abadb3;
+	position: absolute;
+	left: 0;
+	z-index: 1
+}
+
+.dropdown-list {
+	display: inline-block;
+	color: #444;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	cursor: default;
+} 
+
+.dropdown-list .optgroup {
+	font-weight: bold;
+	padding: 0 4px;
+}
+
+.dropdown-list .option {
+	padding: 0 20px;
+}
+
+/*.dropdown-list .option:hover,*/
+.dropdown-list .active {
+	background-color: #3399ff;
+	color: #fff;
+}
+
+.search-opt {
+	background-color: #E4E4E4;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #F4F4F4), color-stop(50%, #F0F0F0), color-stop(52%, #E8E8E8), color-stop(100%, #EEE));
+	background-image: -webkit-linear-gradient(top, #F4F4F4 20%, #F0F0F0 50%, #E8E8E8 52%, #EEE 100%);
+	background-image: -moz-linear-gradient(top, #F4F4F4 20%, #F0F0F0 50%, #E8E8E8 52%, #EEE 100%);
+	background-image: -o-linear-gradient(top, #F4F4F4 20%, #F0F0F0 50%, #E8E8E8 52%, #EEE 100%);
+	background-image: -ms-linear-gradient(top, #F4F4F4 20%, #F0F0F0 50%, #E8E8E8 52%, #EEE 100%);
+	background-image: linear-gradient(top, #F4F4F4 20%, #F0F0F0 50%, #E8E8E8 52%, #EEE 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#eeeeee', GradientType=0 );
+
+	display: inline-block;
+	color: #333;
+	border: 1px solid #AAA;
+	line-height: 13px;
+	padding: 3px 20px 3px 5px;
+	margin: 3px 0 3px 5px;
+	position: relative;
+	cursor: default;
+
+  -webkit-box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+
+
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+
+}
